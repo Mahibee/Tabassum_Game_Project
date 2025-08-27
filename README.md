@@ -64,11 +64,11 @@ Meowgic Catch is a game build on Python OpenGL
 
 - **Project Structure (Example)**  
 MeowgicCatch/
-├─ Assets/ # Models, sprites, audio, VFX
-├─ Scripts/ # Gameplay systems (movement, AI, spawns)
-├─ Scenes/ # Main scene(s)
-├─ Settings/ # Input, quality, physics configs
-└─ README.md
+- ├─ Assets/ # Models, sprites, audio, VFX
+- ├─ Scripts/ # Gameplay systems (movement, AI, spawns)
+- ├─ Scenes/ # Main scene(s)
+- ├─ Settings/ # Input, quality, physics configs
+- └─ README.md
 
 
 
