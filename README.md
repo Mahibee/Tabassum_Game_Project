@@ -1,70 +1,76 @@
 # CSE423_Game-Project
 Meowgic Catch is a game build on Python OpenGL
-🐾 Meowgic Catch
-📖 Project Overview
+# 🐾 Meowgic Catch
 
-Meowgic Catch is a 3D grid-based game where players control a cat made of simple shapes, navigating the arena to collect fish while avoiding enemy dogs. The game mixes fast-paced action, strategic abilities, and evolving environments to create replayable fun. Players must outmaneuver dogs, chase disappearing fish, and use special powers to survive longer and score higher.
+> A 3D grid-based arcade game where a shape-built cat dashes around collecting fish, outsmarting dogs, and adapting to shifting weather and skies.
 
-🎯 Objective
+---
 
-The goal is to collect as many fish as possible while surviving against enemy dogs and environmental challenges.
+- **Project Overview**  
+  Meowgic Catch is a **3D grid-based game** where you control a cat made from simple shapes. You’ll collect fish, dodge enemy dogs, and leverage time-limited boosts. The environment evolves as you play—**sky cycles** and **random weather** change how you move and plan.
 
-Outsmart dogs using jumps, decoys, and stunning meows.
+- **Objective**  
+  **Collect as many fish as possible** while staying alive. Use movement, jumps, combos, decoys, and meows to evade dogs, intercept stolen fish, and maximize your score before your lives run out.
 
-React quickly to disappearing or fast-moving fish.
+- **Game Features**  
+  - **Player Movement**: Move and rotate the cat on the grid.  
+  - **Jump Action**: Leap briefly to avoid obstacles or enemies.  
+  - **Cheat Mode**: Auto-collect nearby fish in a circular path.  
+  - **Pounce Combo**: Jump and grab multiple fish mid-air for bonus value.  
 
-Use power-ups and cheat modes to maximize your score.
+- **Fish Types**  
+  - **Normal Fish**: Spawn at random grid positions.  
+  - **Power-Up Fish** (glowing gold): Grants **Speed Boost** or **Double Score** for **10s**.  
+  - **Fast Fish**: Move quickly—requires sprinting/timing to catch.  
+  - **Timed Fish**: Disappear after a short window—reach them fast.
 
-Manage your limited lives to stay in the game.
+- **Enemy Behaviors**  
+  - **Enemy Dogs**: Spawn and **chase** the cat.  
+  - **Enemy Collision**: Contact with a dog **reduces a life**.  
+  - **Dog Block/Steal**: Dogs can **steal nearby fish**; intercept to recover momentum.  
+  - **Chase Diversion**: Drop a **decoy fish** to distract dogs for **5s**.
 
-✨ Game Features
+- **Abilities & Systems**  
+  - **Meow Scare**: Stun nearby dogs for **2s** (cooldown-based).  
+  - **Score System**: Collecting fish increases score; power-ups amplify gains.  
+  - **Life System**: Start with **5 lives** (configurable).  
+  - **Restart Game**: Resets lives, score, environment, and spawns.
 
-Player Movement: Move and rotate the cat on the grid.
+- **Dynamic Environment**  
+  - **Sky Cycle**: Every **30s** the scene transitions (**Morning → Afternoon → Evening**).  
+  - **Weather Shifts**:  
+    - 🌧️ **Rain** → Slippery ground (reduced traction/longer slide).  
+    - 🌫️ **Fog** → Reduced visibility (shorter sight/indicator range).
 
-Jump Action: Avoid obstacles or dodge enemy dogs.
+---
 
-Cheat Mode: Auto-collect nearby fish in a circular path.
+- **Suggested Controls**  
+  - **Move/Rotate**: WASD / Arrow Keys  
+  - **Jump**: Space  
+  - **Pounce Combo**: Space while moving over fish clusters  
+  - **Cheat Mode**: C (toggle if enabled)  
+  - **Meow Scare**: M (cooldown)  
+  - **Drop Decoy**: Q  
+  - **Restart**: R  
+  > _Customize these in your input settings; names here are placeholders._
 
-Pounce Combo: Jump to grab multiple fish mid-air.
+- **Gameplay Tips**  
+  - **Chain pounces** during power-up windows to snowball score.  
+  - **Use decoys** to split dog packs before diving into crowded fish lanes.  
+  - **Track weather**: brake earlier in rain; navigate by minimap cues in fog.  
+  - **Time-limited fish**: prioritize them over distant static fish.
 
-🐟 Fish Collectibles
+---
 
-Normal Fish: Spawn randomly on the grid.
+- **Project Structure (Example)**  
+MeowgicCatch/
+├─ Assets/ # Models, sprites, audio, VFX
+├─ Scripts/ # Gameplay systems (movement, AI, spawns)
+├─ Scenes/ # Main scene(s)
+├─ Settings/ # Input, quality, physics configs
+└─ README.md
 
-Power-Up Fish: Glowing golden fish that grant speed boost or double score for 10s.
 
-Fast Fish: Move quickly—requires sprinting to catch.
 
-Timed Fish: Disappear if not collected fast enough.
 
-🐶 Enemy Dogs
 
-Dog Chase: Dogs spawn and actively pursue the cat.
-
-Enemy Collision: Touching a dog reduces the cat’s life.
-
-Dog Block: Dogs can steal nearby fish.
-
-Chase Diversion: Drop a decoy fish to distract dogs for 5 seconds.
-
-⚡ Abilities & Survival Tools
-
-Meow Scare: Stun nearby dogs for 2 seconds (cooldown ability).
-
-Life System: Start with 5 lives; losing them ends the game.
-
-Restart Game: Resets lives, scores, and all spawns.
-
-🌍 Dynamic Environment
-
-Sky Shifts: Every 30s, the background transitions (Morning → Afternoon → Evening).
-
-Weather Effects:
-
-🌧️ Rain → Slippery ground.
-
-🌫️ Fog → Reduced visibility.
-
-🕹️ Gameplay Summary
-
-Guide your cat through the 3D arena, collect different types of fish, and face threats from enemy dogs and shifting environments. Use smart timing, combos, and abilities to stay alive and rack up points. Each session feels unique thanks to changing skies, weather, and unpredictable enemy behavior.
